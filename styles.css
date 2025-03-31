@@ -62,10 +62,34 @@ body {
     flex-grow: 1;
     height: 100vh;
     width: 266px;
+    position: relative;
 }
 
 .logo-image > img {
-    max-width: 100%;  /* Ensures the image doesn’t exceed the container */
-    height: 100%;  /* Keeps aspect ratio */
-    display: block; /* Prevents unwanted spacing below the image */
+    max-width: 100%;
+    height: 100%;
+}
+
+.logo {
+    height: 6rem;
+    background-color: rgb(2 2 2/ 0.5);
+
+    position: absolute;
+    top: 100px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > img {
+    max-width: 100%;
+    height: 90%;
+}
+
+.logo > h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;    
 }
