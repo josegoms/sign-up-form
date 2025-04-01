@@ -46,6 +46,14 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+@font-face {
+  font-family: 'Norse';
+  src: url("webfontkit-20250331-203406/norse-bold-webfont.woff2") format("woff2"),
+       url("webfontkit-20250331-203406/norse-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
     display: flex;  
     justify-content: center;
@@ -60,6 +68,7 @@ body {
 
 .logo-image {
     flex-grow: 1;
+    flex-shrink: 0;
     height: 100vh;
     width: 266px;
     position: relative;
@@ -91,5 +100,6 @@ body {
 .logo > h1 {
     color: white;
     font-size: 4rem;
+    font-family: 'Norse';
     text-align: center;    
 }
