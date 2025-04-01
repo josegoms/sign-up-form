@@ -154,9 +154,32 @@ button {
   cursor: pointer;
 }
 
-p {
+button:hover {
+  background-color: rgb(60, 130, 225);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  box-shadow: 0 0 0 3px rgba(71, 140, 231, 0.5);
+  background-color: rgb(42, 127, 238);
+}
+
+.sign-up p {
   margin-left: 50px;
   font-size: 1.2rem;
+}
+
+.logo-image p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: black;
+}
+
+a {
+  color: black;
 }
 
 span {
